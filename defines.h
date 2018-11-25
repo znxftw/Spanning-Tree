@@ -52,6 +52,7 @@ void generateAdjacency(int adjMatrix[maxVert][maxEdge], int numVert, int numEdge
 
 // Function to print adjacency matrix 
 void printAdjacency(int adjMatrix[maxVert][maxEdge], int numVert){
+	printf("\n\n Adjacency Matrix : \n\n");
 	int i = 0, j = 0;
 	for(i = 0; i < numVert; ++i){
 		for(j = 0; j < numVert; ++j)

@@ -15,7 +15,7 @@ int main(){
 	// Check for overflow
 	int errorFlag = checkValid(numVert, numEdge);
 	if( errorFlag == 1 ){
-		printf("Invalid number of vertices %d ( Maximum %d ) or edges %d (Maximum %d), exiting...", numVert, maxVert, numEdge, maxEdge);
+		printf("Invalid number of vertices %d (Maximum %d) or edges %d (Maximum %d), exiting...", numVert, maxVert, numEdge, maxEdge);
 		exit(0);
 	}
 	
@@ -29,7 +29,7 @@ int main(){
 	// Run the algorithm 
 	int choice;
 	while(1){
-		printf("1. Prim's Algorithm\n2.Kruskal's Algorithm\n3.Exit");
+		printf("1.Prim's Algorithm\n2.Kruskal's Algorithm\n3.Exit");
 		scanf("%d", &choice);
 		switch(choice){
 			case 1 : runPrims(adjMatrix);
