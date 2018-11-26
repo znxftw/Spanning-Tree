@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "kruskal.h"
-#include "prims.h"
-#include "defines.h"
+#include "kruskal.c"
+#include "prims.c"
+#include "defines.c"
 
 int main(){
 	
