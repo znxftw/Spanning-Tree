@@ -13,7 +13,7 @@ int checkValid(int numVert, int numEdge){
 
 // Function to check if a given input is valid
 
-int checkInput(int adjMatrix[maxVert][maxEdge], int numVert, int numEdge, int x, int y, int z){
+int checkInput(int adjMatrix[maxVert][maxVert], int numVert, int numEdge, int x, int y, int z){
 	if(z == 0)
 		return 1;
 	if(x >= numVert || y >= numVert)
@@ -29,7 +29,7 @@ int checkInput(int adjMatrix[maxVert][maxEdge], int numVert, int numEdge, int x,
 
 // Function to input adjacency matrix of the graph
 
-void generateAdjacency(int adjMatrix[maxVert][maxEdge], int numVert, int numEdge){
+void generateAdjacency(int adjMatrix[maxVert][maxVert], int numVert, int numEdge){
 	printf("Vertices are numbered v%d to v%d\n",0,numVert - 1);
 	printf("Enter the %d edges in the following space separate format with a newline for each edge : \nx y z (x is starting vertex, y is ending vertex, z is edge cost", numEdge);
 	int i = 0;
@@ -51,7 +51,7 @@ void generateAdjacency(int adjMatrix[maxVert][maxEdge], int numVert, int numEdge
 }
 
 // Function to print adjacency matrix 
-void printAdjacency(int adjMatrix[maxVert][maxEdge], int numVert){
+void printAdjacency(int adjMatrix[maxVert][maxVert], int numVert){
 	printf("\n\n Adjacency Matrix : \n\n");
 	int i = 0, j = 0;
 	for(i = 0; i < numVert; ++i){

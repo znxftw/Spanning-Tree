@@ -6,7 +6,7 @@
 int main(){
 	
 	//
-	int adjMatrix[maxVert][maxEdge] = {0}, numVert, numEdge;
+	int adjMatrix[maxVert][maxVert] = {0}, numVert, numEdge;
 	
 	// Input
 	printf("Number of vertices and number of edges : ");
